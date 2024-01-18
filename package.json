@@ -1,12 +1,16 @@
 {
   "name": "playwright_demo",
   "version": "1.0.0",
+  "keywords": [],
+  "author": "Volkov_Pavlo",
+  "license": "ISC",
   "description": "",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:debug-logs": "DEBUG=* DEBUG_FILE=logs.txt playwright test"
+  },
   "devDependencies": {
     "@playwright/test": "^1.40.1",
     "@types/node": "^20.10.4"
